@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: calc(1em + 12px);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+p, img, iframe{
+  margin-bottom: 26px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 26px;
+}
+
+h1{
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+:root{
+  --light: #e5e5e5;
+  --red: #ad241b;
+  --grey: #5e5e63;
+  --dark: #100f10;
+  --card_dark: #161616;
+}
+
+/* Rewrite antd styles */
+
+.ant-layout-sider,
+.ant-layout-header,
+.ant-layout-footer,
+.ant-layout-content{
+  color: var(--light) !important;
+  background-color: var(--dark) !important;
+}
+
+.ant-layout-header,
+.ant-layout-footer{
+  padding: 0 !important;
+}
+
+.ant-layout-sider{
+  min-height: 100vh;
+  border-right: 1px solid var(--card_dark);
+}
+.ant-card-body{
+  color: var(--light) !important;
+  background-color: var(--card_dark) !important;
+}
+
+.ant-card{
+  background-color: var(--card_dark) !important;
+}
+.ant-card-body *{
+  color: var(--light) !important;
+}
+
+.ant-select-selector{
+  background-color: var(--dark) !important;
+  border: 1px solid var(--grey) !important;
+  color: var(--grey) !important;
+  border-radius: 18px !important;
+}
+.ant-select-dropdown,
+.ant-pagination-item-active{
+  background-color: var(--dark) !important;
+  border: 1px solid var(--grey) !important;
+  color: var(--grey) !important;
+}
+.ant-select-selection-placeholder,
+.ant-select-item{
+  color: var(--grey) !important;
+}
+.ant-pagination *{
+  color: var(--grey) !important;
+}

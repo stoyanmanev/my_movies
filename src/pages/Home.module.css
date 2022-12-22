@@ -1,0 +1,7 @@
+.sider-padding{
+    padding: 65px 40px 65px;
+}
+.main-part{
+    padding: 45px;
+    background-color: var(--dark);
+}
