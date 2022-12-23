@@ -10,6 +10,8 @@ const Branding: React.FC = () => {
         <Image
           alt="My Movie - The new site for free movies without adds."
           src={require("../../assets/images/branding.png")}
+          height={30}
+          width={119}
           preview={false}
         />
       </Link>

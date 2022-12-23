@@ -50,7 +50,7 @@ const MovieContent: React.FC<Props> = (props) => {
                 <p>{movie.description}</p>
                 <Row gutter={8}>
                   {movie.genre.map(genre => (
-                    <Col><span style={{ backgroundColor: '#ad241b', padding: '0.5rem 0.8rem', borderRadius: '0.4rem' }}>{genre}</span></Col>
+                    <Col key={genre}><span style={{ backgroundColor: '#ad241b', padding: '0.5rem 0.8rem', borderRadius: '0.4rem' }}>{genre}</span></Col>
                   ))}
                 </Row>
               </Col>
