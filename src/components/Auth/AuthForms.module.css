@@ -1,0 +1,11 @@
+.form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.form input{
+    color: var(--card_dark) !important;
+}
+.notification p{
+    margin-bottom: 0;
+}

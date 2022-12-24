@@ -1,29 +1,29 @@
 import { Layout } from "antd";
 import Sider from "antd/es/layout/Sider";
-import { Content, Footer } from "antd/es/layout/layout";
+import { Content } from "antd/es/layout/layout";
 import React from "react";
-import classes from "./Home.module.css";
-import Branding from "../components/branding/Branding";
-import MainNavigation from "../components/navigation/MainNavigation";
+import classes from "./Pages.module.css";
 import Movies from "../components/movies/Movies";
 import TheHeader from "../components/layout/TheHeader";
 import { Provider } from "mobx-react";
-import MoviesStore from "../store/MoviesStore"
+import MoviesStore from "../store/MoviesStore";
+import UserStore from "../store/UserStore";
+import NavigationHolder from "../components/navigation/NavigationHolder";
+import TheFooter from "../components/layout/TheFooter";
 
 const Home: React.FC = () => {
   return (
-    <Provider MoviesStore={MoviesStore}>
+    <Provider MoviesStore={MoviesStore} UserStore={UserStore}>
       <Layout>
-        <Sider className={classes["sider-padding"]}>
-          <Branding />
-          <MainNavigation />
+        <Sider>
+          <NavigationHolder />
         </Sider>
         <Layout className={classes["main-part"]}>
           <TheHeader />
           <Content>
             <Movies />
           </Content>
-          <Footer>Footer</Footer>
+          <TheFooter />
         </Layout>
       </Layout>
     </Provider>

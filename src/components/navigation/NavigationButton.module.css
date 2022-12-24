@@ -1,0 +1,10 @@
+.text{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--light);
+    margin-left: 24px;
+}
+.text:last-child{
+    margin-right: 0;
+}

@@ -13,7 +13,7 @@ const SearchBar: React.FC = () => {
   const optionsMovies: Options = MoviesStore.moviesNames.map(movie => ({value: movie, label: movie}))
   const [options, setOptions] = useState<Options>(optionsMovies);
   const [value, setValue] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const onChangeHandler = (data: string) => {
     if(value.length > data.length){
@@ -30,7 +30,7 @@ const SearchBar: React.FC = () => {
 
 
   const onSelectHandler = (value: string) => {
-    navigate(`/movies/${value}`)
+    navigate(`/movies/${value}`);
   }
 
   return (

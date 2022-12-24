@@ -1,0 +1,25 @@
+.sider-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 37px 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 199px;
+}
+
+.sider-wrapper .down-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.space-bottom{
+  margin-bottom: 18px;
+  display: inline-block;
+}
+.space-bottom:last-child{
+  margin-bottom: 0;
+}
